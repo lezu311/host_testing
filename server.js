@@ -7,7 +7,6 @@ let rgb = {
 }
 
 const server = new WebSocket.Server({
-    host: "0.0.0.0",
     port: 8080
 });
 
