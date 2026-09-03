@@ -33,7 +33,11 @@ server.on("connection", (socket) => {
             rgb.g = Math.random();
             rgb.b = Math.random();
 
-            broadcast(rgb)
+            broadcast(rgb);
+
+            console.log("replied to client");
         }
     });
 });
+
+console.log("STARTING WEBSOCKET SERVER");
