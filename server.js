@@ -6,8 +6,10 @@ let rgb = {
     b : 0
 }
 
+const PORT = process.env.PORT || 8080;
+
 const server = new WebSocket.Server({
-    port: 8080
+    port: PORT
 });
 
 function broadcast(data) {
